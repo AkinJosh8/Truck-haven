@@ -12,7 +12,7 @@ const mailArea = document.getElementById("email-area")
 const messageArea = document.getElementById("message-area")
 
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener("click", ()=>{
     if (nameArea === "") {
         alert("Please enter your name")
         return
@@ -25,3 +25,8 @@ submitButton.addEventListener('click', () => {
     }
     alert(`Message sent successfully`)
 })
+
+function reloadMap() {
+        const iframe = document.getElementById("nigeriaMap");
+        iframe.src = iframe.src; // reload iframe
+}

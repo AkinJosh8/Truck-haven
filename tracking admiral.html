@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link href="tracking Admiral.css" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./Project images/admiral logo.png" type="image/x-icon">
         <script type="text/javascript" src="./scriptNavAdmiral.js" defer></script>
         <script src="https://kit.fontawesome.com/9eacf3c352.js" crossorigin="anonymous"></script>       
@@ -32,8 +32,20 @@
         </section>
         <section>
             <div class="locate">
-                <div class="locator">
-                   <img class="location-img" src="./Project images/location.png" alt="location">
+                <div class="container">
+                    <div class="map-wrapper">
+                        <iframe
+                            id="nigeriaMap"
+                            src="https://www.google.com/maps?q=Nigeria&z=6&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="controls">
+                        <button onclick="reloadMap()" class="reload-Btn">Reload Map</button>
+                    </div>
                 </div>
                 <div class="tech">
                     <p class="sub-tech1">Technology plays a major role at Admiral Trucker (Nig) Ltd, from equipment monitoring/tracking to information systems to customer

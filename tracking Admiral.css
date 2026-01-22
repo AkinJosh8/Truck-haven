@@ -60,23 +60,63 @@ ul li a{
 }
 .locate{
     width: 80%;
-    height: 570px;
+    height: 670px;
     display: block;
     margin-bottom: 30px;
 
 }
-.locator{
-    padding: 10px;
-    width: 35%;
-    margin-left: 450px;
-}
-.location-img{
-    width: 100%;
-    height: auto;
-}
+.container {
+            width: 60%;
+            
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 10px; 
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .controls {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+       .reload-Btn {
+            padding: 0.7rem 1.4rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            background: rgb(102, 6, 6);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .reload-Btn:hover {
+            background: rgb(102, 6, 6);
+        }
+
+        
+
+       
 .tech{
     width: 100%;
     margin-left: 120px;
+    margin-top: 20px;
 }
 .sub-tech1, .sub-tech2, .sub-tech3, .sub-tech4{
     font-size: 18px;
@@ -167,11 +207,12 @@ p, label { font-size: 16px; line-height: 1.45; }
     border: none;
     touch-action: manipulation;
     border-radius: 5px;
-    &:hover{
-        cursor: pointer;
+
+}
+#buttn:hover{
+    cursor: pointer;
         background: maroon;
         color: #fff;
-    } 
 }
 nav ul { 
     display: none; 
